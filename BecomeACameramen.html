@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hassan's web</title> 
+		<link rel="stylesheet" type=text/css href="about.css"> -->
+		<script>
+			function Login(){
+				if (myForm.pwd.value == myForm.cpwd.value){
+					alert("Password Matches")
+					window.open("finishedlogin.html")				
+				}else{
+					alert ("Password does not match")
+				}
+			}
+        </script>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="BecomeACameramen.html">Become A Cameramen</a>
+            <a href="RentACameramen.html">Rent A Cameramen</a>
+            <a href="OurTeam.html">Our team</a>
+            <a href="#about">Our Team</a>
+          </div>
+
+
+
+	<style>
+	#sidebar {
+	  position: fixed;
+	  width: 25%;
+	  height: 100%;
+	  background: #151719;
+	  left: -25%;
+	  transition: all 500ms linear; 
+	}
+	#sidebar.active {
+	  left: 0px;
+	}
+	#sidebar ul li {
+	  color: White;
+	  list-style:none;
+	  padding: 15px 10px;
+	  border-bottom: 1px solid rgba(100,100,100,0.3);
+	}
+	#sidebar .toggle-btn {
+	  position: absolute;
+	  Left: 400px;
+	  top: 20px;
+	}
+	#sidebar .toggle-btn span {
+	  display: block;
+	  width: 30px;
+	  height: 5px;
+	  background: #151719;
+	  margin: 5px 0px;
+	}
+	</style>
+	</head>
+
+	<body style="font-size:32px">  
+
+		<center>
+
+			<div class="content">
+				 <a href="sign-ups.html"><h1>Sign Up Here!</h1></a>
+			</div>
+
+			<p>HF Productions</p>
+
+			<h2>login below</h2>
+
+
+	<form name="myForm">
+			<input type="text" name="user" placeholder= "Username">
+			<input type="password" name="pwd" placeholder="Password">
+			<input type="password" name="cpwd" placeholder="Check Password">
+			<button type="button" name="sign" onclick="Login()">Sign In</button>
+		</form>
+
+
+
+<div id="id01" class="modal">
+  		</center>
+
+		
+
+		<script>
+			function toggleSidebar(){
+	  		document.getElementById("sidebar").classList.toggle('active');
+	  		}
+		</script>
+
+		<link rel="stylesheet" type=text/css href="login.css">
+
+	
+
+	</body>
+
+
+</html>
